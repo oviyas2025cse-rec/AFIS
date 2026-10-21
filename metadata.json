@@ -1,0 +1,6 @@
+{
+  "name": "AFIS — Academic Flow Intelligence System",
+  "description": "Student academic productivity and deadline management platform with transparent priority scoring, calendar scheduling, and workload analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

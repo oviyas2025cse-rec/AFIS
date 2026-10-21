@@ -1,0 +1,152 @@
+/* AFIS - Academic Flow Intelligence System
+   Royal Purple & Champagne Gold Theme (Bootstrap 5 custom stylesheet) */
+
+:root {
+  --afis-bg-deep: #0c0517;
+  --afis-bg-surface: #190c30;
+  --afis-bg-elevated: #241244;
+  --afis-purple-main: #8b5cf6;
+  --afis-purple-glow: rgba(139, 92, 246, 0.25);
+  --afis-gold: #d4af37;
+  --afis-gold-light: #f5e0a3;
+  --afis-gold-muted: rgba(212, 175, 55, 0.18);
+  --afis-border: rgba(147, 51, 234, 0.25);
+  --afis-border-gold: rgba(212, 175, 55, 0.35);
+  --afis-text: #f3f4f6;
+  --afis-text-muted: #9ca3af;
+}
+
+body {
+  background-color: var(--afis-bg-deep);
+  color: var(--afis-text);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.afis-navbar {
+  background-color: rgba(18, 9, 34, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--afis-border-gold);
+}
+
+.afis-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.afis-brand-badge {
+  background: linear-gradient(135deg, #d4af37, #f5e0a3);
+  color: #0c0517;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.afis-card {
+  background-color: var(--afis-bg-surface);
+  border: 1px solid var(--afis-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.afis-card:hover {
+  border-color: var(--afis-border-gold);
+}
+
+.afis-card-gold {
+  background: linear-gradient(145deg, #1f0f3a, #160a2b);
+  border: 1px solid var(--afis-border-gold);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.afis-card-gold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #8b5cf6, #d4af37);
+}
+
+.btn-afis-gold {
+  background: linear-gradient(135deg, #d4af37, #b8972e);
+  color: #0c0517;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.btn-afis-gold:hover {
+  background: linear-gradient(135deg, #e5c058, #c9a53b);
+  color: #000;
+  transform: translateY(-1px);
+}
+
+.btn-afis-purple {
+  background-color: #7c3aed;
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.btn-afis-purple:hover {
+  background-color: #6d28d9;
+  color: #ffffff;
+}
+
+.afis-metric-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.afis-sidebar {
+  background-color: #120824;
+  border-right: 1px solid var(--afis-border);
+  min-height: calc(100vh - 64px);
+}
+
+.afis-nav-link {
+  color: #d1d5db;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+}
+
+.afis-nav-link:hover, .afis-nav-link.active {
+  background-color: rgba(139, 92, 246, 0.15);
+  color: #f3e8ff;
+  border-left: 3px solid #d4af37;
+}
+
+.afis-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--afis-gold);
+}

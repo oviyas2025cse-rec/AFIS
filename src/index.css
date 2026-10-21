@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* AFIS Royal Purple & Champagne Gold Design System */
+    --afis-canvas: #0c0517;
+    --afis-canvas-subtle: #120922;
+    --afis-surface: #190c30;
+    --afis-surface-elevated: #211140;
+    --afis-surface-hover: #29154f;
+    --afis-border: rgba(147, 51, 234, 0.22);
+    --afis-border-gold: rgba(212, 175, 55, 0.3);
+    
+    --afis-gold: #D4AF37;
+    --afis-gold-light: #E9D5A1;
+    --afis-gold-muted: rgba(212, 175, 55, 0.15);
+    
+    --afis-purple: #9333EA;
+    --afis-purple-light: #C084FC;
+    --afis-purple-muted: rgba(147, 51, 234, 0.18);
+  }
+
+  body {
+    background-color: var(--afis-canvas);
+    color: #F3F4F6;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f071e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2f1754;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #492284;
+}
+
+/* Subtle gold & purple focus rings */
+input:focus, select:focus, textarea:focus, button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.45);
+}
